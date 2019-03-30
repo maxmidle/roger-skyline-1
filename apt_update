@@ -1,4 +1,4 @@
-sudo echo "sudo apt-get update -y && apt-get upgrade -y >> /var/log/update_script.log" > ~/scripts/apt_update.sh
+sudo echo "sudo apt-get update -y && sudo apt-get upgrade -y >> /var/log/update_script.log" > ~/scripts/apt_update.sh
 
 ---------------------------------
 
