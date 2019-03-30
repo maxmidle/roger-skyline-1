@@ -1,0 +1,18 @@
+sudo vim /etc/network/interfaces.d/enp0s3
+
+write :
+iface enp0s3 inet static
+	address 10.12.211.242
+	netmask 255.255.255.252
+	gateway	10.12.254.254
+
+--------------------------------------------
+
+sudo vim /etc/network/interfaces
+
+add (in primary interfaces section):
+auto enp0s3
+
+--------------------------------------------
+
+sudo service networking restart

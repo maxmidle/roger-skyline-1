@@ -1,0 +1,9 @@
+sudo ufw enable
+
+-----------------------
+
+sudo ufw allow 52051/tcp
+
+-----------------------
+
+sudo ufw reload

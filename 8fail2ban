@@ -1,0 +1,14 @@
+sudo vim /etc/fail2ban/jail.conf
+
+change sshd jail :
+[sshd]
+enable = true
+port = 52051
+logpath = %(sshd_log)s
+backend = %(sshd_backend)s
+maxretry = 3
+bantime = 500
+
+----------------------------
+
+sudo service fail2ban restart

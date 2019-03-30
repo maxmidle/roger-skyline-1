@@ -1,0 +1,21 @@
+sudo vim /etc/default/portsentry
+
+change :
+TCP_MODE="atcp"
+UDP_MODE="audp"
+
+-----------------------------
+
+sudo vim /etc/default/portsentry.conf
+
+change :
+BLOCK_UDP="1"
+BLOCK_TCP="1"
+
+uncomment chosen kill route and comment the current one (e.g):
+
+KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"
+
+-----------------------------
+
+sudo service portsentry restart"

@@ -1,0 +1,7 @@
+su
+
+---------------------
+
+visudo
+
+add : [userName] ALL=(ALL:ALL) NOPASSWD:ALL

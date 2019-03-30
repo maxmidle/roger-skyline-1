@@ -1,0 +1,4 @@
+sudo vim /etc/ssh/sshd_config
+
+uncomment and change port line :
+port 52051

@@ -1,0 +1,9 @@
+sudo echo "sudo apt-get update -y && apt-get upgrade -y >> /var/log/update_script.log" > ~/scripts/apt_update.sh
+
+---------------------------------
+
+sudo vim /etc/crontab
+
+add :
+0 4  * * 1	root sudo sh ~/scripts/apt_update.sh
+@reboot		root sudo sh ~/scripts/apt_update.sh
