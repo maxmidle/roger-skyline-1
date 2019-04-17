@@ -1,7 +1,9 @@
-su
+                                        [1m[32mSudoAllow[0m
 
----------------------
+[35;1m-[0m su
 
-visudo
+[35;1m-[0m visudo
 
-add : [userName] ALL=(ALL:ALL) NOPASSWD:ALL
+[35;1m-[0m add : [userName] ALL=(ALL:ALL) NOPASSWD:ALL
+
+[34;1m-----------------------------------------------------------------------------------[0m

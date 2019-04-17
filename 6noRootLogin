@@ -1,4 +1,8 @@
-sudo vim /etc/ssh/sshd_config
+                                        [1m[32mNoRootLogin[0m
 
-uncomment and change line 32 :
-PermitRootLogin no
+[35;1m-[0m sudo vim /etc/ssh/sshd_config
+
+[35;1m-[0m uncomment and change line 32 :
+	PermitRootLogin no
+
+[34;1m-----------------------------------------------------------------------------------[0m

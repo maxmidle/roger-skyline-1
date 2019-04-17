@@ -1,26 +1,25 @@
-sudo vim ~/scripts/watchCrontab.sh
+                                        [1m[32mWatchCrontab[0m
 
-write :
-CRONTAB=/etc/crontab
-SAVE=/etc/crontab_save
+[35;1m-[0m sudo vim ~/scripts/watchCrontab.sh
 
-if [ ! -e $SAVE ]; then
-	sudo cp $CRONTAB $SAVE
-	echo "creating save"
-fi
+[35;1m-[0m write :
+	CRONTAB=/etc/crontab
+	SAVE=/etc/crontab_save
 
-MCRON=`md5sum $CRONTAB | cut -d ' ' -f1`
-MSAVE=`md5sum $SAVE | cut -d ' ' -f1`
+	if [ ! -e $SAVE ]; then
+		sudo cp $CRONTAB $SAVE
+		echo "creating save"
+	fi
 
-if [ $MCRON != $MSAVE ]; then
-	echo "crontab est different" | mail root
-	sudo cp $CRONTAB $SAVE
-fi
+	MCRON=`md5sum $CRONTAB | cut -d ' ' -f1`
+	MSAVE=`md5sum $SAVE | cut -d ' ' -f1`
 
--------------------------------
+	if [ $MCRON != $MSAVE ]; then
+		echo "crontab est different" | mail root
+		sudo cp $CRONTAB $SAVE
+	fi
 
-sudo vim /etc/crontab
+[35;1m-[0m sudo vim /etc/crontab
 
-add : 
-
-0  0  * * * root sudo sh ~/scripts/watchCrontab.sh
+[35;1m-[0m add : 
+	0  0  * * * root sudo sh ~/scripts/watchCrontab.sh

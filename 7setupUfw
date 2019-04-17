@@ -1,9 +1,9 @@
-sudo ufw enable
+                                        [1m[32mSetupUFW[0m
 
------------------------
+[35;1m-[0m sudo ufw enable
 
-sudo ufw allow 52051/tcp
+[35;1m-[0m sudo ufw allow 52051/tcp
 
------------------------
+[35;1m-[0m sudo ufw reload
 
-sudo ufw reload
+[34;1m-----------------------------------------------------------------------------------[0m

@@ -1,1 +1,5 @@
-sudo systemctl disable [serviceName]
+                                        [1m[32mServiceStop[0m
+
+[35;1m-[0m sudo systemctl disable [serviceName]
+
+[34;1m-----------------------------------------------------------------------------------[0m

@@ -1,21 +1,20 @@
-sudo vim /etc/default/portsentry
+                                        [1m[32mProtectScanPort[0m
 
-change :
-TCP_MODE="atcp"
-UDP_MODE="audp"
+[35;1m-[0m sudo vim /etc/default/portsentry
 
------------------------------
+[35;1m-[0m change :
+	TCP_MODE="atcp"
+	UDP_MODE="audp"
 
-sudo vim /etc/default/portsentry.conf
+[35;1m-[0m sudo vim /etc/default/portsentry.conf
 
-change :
-BLOCK_UDP="1"
-BLOCK_TCP="1"
+[35;1m-[0m change :
+	BLOCK_UDP="1"
+	BLOCK_TCP="1"
 
-uncomment chosen kill route and comment the current one (e.g):
+[35;1m-[0m uncomment chosen kill route and comment the current one (e.g):
+	KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"
 
-KILL_ROUTE="/sbin/iptables -I INPUT -s $TARGET$ -j DROP"
+[35;1m-[0m sudo service portsentry restart
 
------------------------------
-
-sudo service portsentry restart"
+[34;1m-----------------------------------------------------------------------------------[0m

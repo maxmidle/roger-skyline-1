@@ -1,4 +1,8 @@
-sudo vim /etc/ssh/sshd_config
+                                        [1m[32mChangePort[0m
 
-uncomment and change port line :
-port 52051
+[35;1m-[0m sudo vim /etc/ssh/sshd_config
+
+[35;1m-[0m uncomment and change port line :
+	port 52051
+
+[34;1m-----------------------------------------------------------------------------------[0m
