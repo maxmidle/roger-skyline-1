@@ -1,3 +1,4 @@
+[34;1m-----------------------------------------------------------------------------------[0m
                                         [1m[32mAptUpdate[0m
 
 [35;1m-[0m sudo echo "sudo apt-get update -y && sudo apt-get upgrade -y >> /var/log/update_script.log" > ~/scripts/apt_update.sh
@@ -8,4 +9,3 @@
 	0 4  * * 1	root sudo sh ~/scripts/apt_update.sh
 	@reboot		root sudo sh ~/scripts/apt_update.sh
 
-[34;1m-----------------------------------------------------------------------------------[0m
