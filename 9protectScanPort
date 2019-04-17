@@ -6,7 +6,7 @@
 	TCP_MODE="atcp"
 	UDP_MODE="audp"
 
-[35;1m-[0m sudo vim /etc/default/portsentry.conf
+[35;1m-[0m sudo vim /etc/portsentry/portsentry.conf
 
 [35;1m-[0m change :
 	BLOCK_UDP="1"
